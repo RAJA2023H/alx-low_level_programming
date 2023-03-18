@@ -20,18 +20,18 @@ int main(void)
 
 	if (Ldigit > 5)
 	{
-	printf("Last digit of %d is %d");
-	printf("and is greater than 5\n", n, Ldigit);
+	printf("Last digit of %d is %d", n, Ldigit);
+	printf("and is greater than 5\n");
 	}
 	else if (Ldigit == 0)
 	{
-	printf("Last digit of %d is %d");
-	printf("and is 0\n", n, Ldigit);
+	printf("Last digit of %d is %d", n, Ldigit);
+	printf("and is 0\n");
 	}
 	else if (Ldigit < 6 && Ldigit != 0)
 	{
-	printf("Last digit of %d is %d");
-	printf("and is less than 6 and not 0\n", n, Ldigit);
+	printf("Last digit of %d is %d", n, Ldigit);
+	printf("and is less than 6 and not 0\n");
 	}
 	return (0);
 }
