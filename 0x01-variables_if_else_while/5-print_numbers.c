@@ -14,7 +14,7 @@ int main(void)
 
 	while (dig <= 9)
 	{
-		printf("%d", dig));
+		printf("%d", dig);
 		dig++;
 	}
 	printf("\n");
