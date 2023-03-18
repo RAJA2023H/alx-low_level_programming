@@ -20,4 +20,6 @@ int main(void)
 	}
 	putchar(l);/*prints 9*/
 	putchar('\n');/*new line*/
+
+	return (0);
 }
