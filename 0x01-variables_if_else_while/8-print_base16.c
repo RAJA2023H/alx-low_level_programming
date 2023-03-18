@@ -24,6 +24,7 @@ int main(void)
 		putchar(l);
 		l++;
 	}
+	putchart("\, ")
 	putchar('\n');
 	return (0);
 }
