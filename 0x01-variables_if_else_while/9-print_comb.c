@@ -10,15 +10,18 @@
 
 int main(void)
 {
-	int l = 48;
+	int dig = 48;
 
-	while (l < 57)
+	while (dig <= 57)
 	{
-		putchar(l);
-		putchar(", ");/*numbers from 0 to 9 separated by , */
-		l++;
+		putchar(dig);
+		if (dig != 57)
+		{
+			putchar(',');
+			putcar(' ');
+		}
+		dig++;
 	}
-	putchar(l);/*prints 9*/
 	putchar('\n');/*new line*/
 
 	return (0);
