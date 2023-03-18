@@ -18,7 +18,7 @@ int main(void)
 		if (dig != 57)
 		{
 			putchar(',');
-			putcar(' ');
+			putchar(' ');
 		}
 		dig++;
 	}
