@@ -19,7 +19,7 @@ int main(void)
 		dig++;
 	}
 
-	while (char <= 'f')
+	while (l <= 'f')
 	{
 		putchar(l);
 		l++;
