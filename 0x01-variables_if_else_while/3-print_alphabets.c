@@ -24,7 +24,7 @@ int main(void)
 		putchar(L);
 		L++;
 	}
-	puchar('\n');
+	putchar('\n');
 
 	return (0);
 }
