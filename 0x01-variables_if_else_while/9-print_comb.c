@@ -15,7 +15,7 @@ int main(void)
 	while (l < 57)
 	{
 		putchar(l);
-		putchar(',');/*numbers from 0 to 9 separated by , */
+		putchar(", ");/*numbers from 0 to 9 separated by , */
 		l++;
 	}
 	putchar(l);/*prints 9*/
