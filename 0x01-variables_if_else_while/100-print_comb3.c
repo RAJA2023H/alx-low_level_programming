@@ -20,7 +20,7 @@ int main(void)
 			if (dig1 != dig2 && dig1 < dig2)
 			{
 				putchar(dig1 + 48);
-				purchar(dig2 + 48);
+				putchar(dig2 + 48);
 				if (dig1 != 9 && dig2 != 9)
 				{
 					putchar(',');
