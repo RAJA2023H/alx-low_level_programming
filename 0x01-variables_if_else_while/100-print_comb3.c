@@ -15,7 +15,7 @@ int main(void)
 	while (dig1 <= 9)
 	{
 		dig2 = 0;
-		while (dig2 <= 9 && dig1 < dig2)
+		while (dig2 <= 9)
 		{
 			if (dig1 != dig2 && dig1 < dig2)
 			{
