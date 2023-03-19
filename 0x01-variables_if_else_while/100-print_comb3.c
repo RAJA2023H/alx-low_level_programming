@@ -21,7 +21,7 @@ int main(void)
 			{
 				putchar(dig1 + 48);
 				putchar(dig2 + 48);
-				if ((dig1 != 8) && (dig2 != 9))
+				if ((dig1 != 8) || (dig2 != 9))
 				{
 					putchar(',');
 					putchar(' ');
