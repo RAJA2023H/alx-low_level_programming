@@ -1,14 +1,15 @@
 #include "main.h"
-#include <stdio.h>
 
 /**
- * natural - computes and prints the sum of all
+ * main - Entry point
+ *
+ * Description: computes and prints the sum of all
  * the multiples of 3 or 5 below 1024.
  *
- * Return: Always sum (success)
+ * Return: Always 0 (success)
 */
 
-int natural(void)
+int main(void)
 {
 	int num, sum;
 
@@ -23,5 +24,5 @@ int natural(void)
 	}
 	printf("%d\n", sum);
 
-	return (sum);
+	return (0);
 }
