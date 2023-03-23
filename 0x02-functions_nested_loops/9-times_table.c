@@ -15,6 +15,7 @@ void times_table(void)
 		for (y = 0; y <= 9; y++)
 		{
 			int p = (x * y);
+
 			if (p > 9)
 			{
 				_putchar((p / 10) + 48);
