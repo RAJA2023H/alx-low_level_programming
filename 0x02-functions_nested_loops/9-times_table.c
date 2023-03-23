@@ -6,13 +6,12 @@
 
 void times_table(void)
 {
-	int x;
+	int x, y;
 
 	for (x = 0; x <= 9; x++)
 	{
-		int y;
-
-		for (y = 0; y <= 9; y++)
+		_putchar(48);
+		for (y = 1; y <= 9; y++)
 		{
 			int p = (x * y);
 
