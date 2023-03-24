@@ -9,6 +9,6 @@
 
 int mul(int a, int b)
 {
-	return ((a * b) + 48);
+	return ((a + 48) * (b + 48));
 
 }
