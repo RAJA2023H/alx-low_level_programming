@@ -2,8 +2,7 @@
 #include <stdio.h>
 
 /**
- * main - Entry point.
- * Description:  prints the numbers from 1 to 100, print Fizz, print buzz.
+ * main - prints the numbers from 1 to 100, print Fizz, print buzz.
  * Return: Always 0 (Success).
 */
 
