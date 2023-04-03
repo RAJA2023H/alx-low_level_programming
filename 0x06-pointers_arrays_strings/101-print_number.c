@@ -25,7 +25,7 @@ void print_number(int n)
 	while (num > 9)
 	{
 		num /= 10;
-		fac *= 10
+		fac *= 10;
 	}
 	for (; fac >= 1; fac /= 10)
 	{
