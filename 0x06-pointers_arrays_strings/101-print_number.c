@@ -12,15 +12,15 @@ void print_number(int n)
 
 	if (n < 0)
 	{
+		_putchar('-');
 		x = -n;
 	}
 	num = x;
-	for (fac = 1; fac > 9 ; fac++)
+	for (fac = 1; num > 9 ; fac *= 10)
 	{
 		num /= 10;
-		fac *= 10;
 	}
-	for (; fact >= 1; fac /= 10)
+	for (; fac >= 1; fac /= 10)
 	{
 		_putchar(((x / fac) % 10) + 48);
 	}
