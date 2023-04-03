@@ -21,9 +21,11 @@ void print_number(int n)
 	}
 
 	num = x;
-	for (fac = 1; num > 9 ; fac *= 10)
+	fac = 1;
+	while (num > 9)
 	{
 		num /= 10;
+		fac *= 10
 	}
 	for (; fac >= 1; fac /= 10)
 	{
