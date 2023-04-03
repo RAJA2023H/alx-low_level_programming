@@ -7,14 +7,19 @@
 
 void print_number(int n)
 {
-	unsigned int x = n;
+	unsigned int x;
 	int fac, num;
 
 	if (n < 0)
 	{
 		_putchar('-');
-		x = -n;
+		x = n * -1;
 	}
+	else
+	{
+		x = n;
+	}
+
 	num = x;
 	for (fac = 1; num > 9 ; fac *= 10)
 	{
