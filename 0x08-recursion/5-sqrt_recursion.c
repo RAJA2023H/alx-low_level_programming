@@ -34,5 +34,5 @@ int _sqrt_recursion(int n)
 	{
 		return (0);
 	}
-	return (_loop_sqrt_recursion(n, 2));
+	return (_loop_sqrt_recursion(n, 1));
 }
