@@ -30,16 +30,9 @@ int _loop_sqrt_recursion(int n, int k)
 
 int _sqrt_recursion(int n)
 {
-	if (n < 0)
-	{
-		return (-1);
-	}
-	else if (n == 0)
+	if (n == 0)
 	{
 		return (0);
 	}
-	else
-	{
-		return (_loop_sqrt_recursion(n, 2));
-	}
+	return (_loop_sqrt_recursion(n, 2));
 }
