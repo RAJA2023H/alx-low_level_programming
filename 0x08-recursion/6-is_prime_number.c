@@ -28,6 +28,7 @@ int check_is_prime_number(int n, int k)
 		return (1);
 		}
 	}
+	return (check_is_prime_number(n, k++));
 }
 
 /**
