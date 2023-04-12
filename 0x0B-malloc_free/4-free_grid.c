@@ -1,5 +1,5 @@
 #include "main.h"
-
+#include <stdlib.h>
 /**
  * free_grid - free the grid
  * @grid: grid of allocated memories
