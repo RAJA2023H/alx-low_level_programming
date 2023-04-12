@@ -11,7 +11,7 @@
 
 char *_strdup(char *str)
 {
-	int x, len;
+	unsigned int x, len;
 	char *p;
 
 	if (str == 0)
@@ -30,7 +30,7 @@ char *_strdup(char *str)
 	{
 		for (x = 0; x < len; x++)
 		{
-		`	p[x] = str[x];
+			p[x] = str[x];
 		}
 	}
 	return (p);
