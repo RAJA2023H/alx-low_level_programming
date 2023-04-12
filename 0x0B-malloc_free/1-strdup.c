@@ -11,12 +11,12 @@
 
 char *_strdup(char *str)
 {
-	unsigned int x, len;
+	int x, len;
 	char *p;
 
-	if (str == 0)
+	if (str == NULL)
 	{
-		return (0);
+		return (NULL);
 	}
 	for (len = 0; str[len] != '\0'; len++)
 	{
@@ -24,7 +24,7 @@ char *_strdup(char *str)
 	}
 	if (p == 0)
 	{
-		return (0);
+		return (NULL);
 	}
 	else
 	{
