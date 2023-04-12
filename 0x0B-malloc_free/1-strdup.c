@@ -24,7 +24,7 @@ char *_strdup(char *str)
 	}
 	if (p == 0)
 	{
-	return (0);
+		return (0);
 	}
 	else
 	{
