@@ -11,7 +11,7 @@ int main(int argc, char *argv[])
 {
 	int i, m = 1;
 
-	if (argc > 0)
+	if (argc > 1)
 	{
 		for (i = 1; i < argc; i++)
 		{
@@ -22,7 +22,6 @@ int main(int argc, char *argv[])
 	else
 	{
 		printf("Error\n");
-		return (1);
 	}
 
 	return (0);
