@@ -36,10 +36,10 @@ char *string_nconcat(char *s1, char *s2, unsigned int n)
 
 	for (j = 0 ; j < n ; j++)
 	{
-		mem[i] = s2[j];
+		m[i] = s2[j];
 		i++;
 	}
 
-	mem[i] = '\0';
+	m[i] = '\0';
 	return (m);
 }
