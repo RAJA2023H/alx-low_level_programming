@@ -33,12 +33,14 @@ char *string_nconcat(char *s1, char *s2, unsigned int n)
 		n = l2;
 	m = malloc(n + l1 + 1);
 	if (m == NULL)
+	{
 		return (NULL);
-	for (i = 0; i < l1 && s1[i] != '\0'; i++)
+	}
+	for (i = 0; s1[i] != '\0'; i++)
 	{
 		m[i] = s1[i];
 	}
-	for (j = 0 ; j < n && s2[j] != '\0'; j++)
+	for (j = 0 ; j < n ; j++)
 	{
 		m[i] = s2[j];
 		i++;
