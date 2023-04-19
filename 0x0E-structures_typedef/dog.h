@@ -2,9 +2,9 @@
 #define DOG_H
 
 /**
- * struct dog - Define a new type 
+ * struct dog - Define a new type
  * @name: pointer to string
- * @age:  float
+ * @age: float
  * @owner: string
  */
 
