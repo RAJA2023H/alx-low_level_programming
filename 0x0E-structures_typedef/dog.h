@@ -6,12 +6,13 @@
  * @name: pointer to string
  * @age: float
  * @owner: string
+ * Description: Define a new type struct dog.
  */
 
 struct dog
 {
-	char name;
+	char *name;
 	float age;
-	char owner;
+	char *owner;
 };
 #endif
