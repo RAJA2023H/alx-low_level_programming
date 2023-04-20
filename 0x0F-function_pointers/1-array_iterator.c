@@ -5,7 +5,7 @@
  * @array: size of triangle
  * @size: size of triangle
  * @action: size of triangle
- * Description: function that executes a function 
+ * Description: function that executes a function
  * Return: void
  */
 void array_iterator(int *array, size_t size, void (*action)(int))
