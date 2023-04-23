@@ -18,7 +18,7 @@ void print_all(const char * const format, ...)
 
 	while (format && format[x])
 	{
-		switch (forma[x])
+		switch (format[x])
 		{
 			case 'c':
 				printf("%s%c", sp, va_arg(list, int));
