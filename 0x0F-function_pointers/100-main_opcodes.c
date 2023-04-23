@@ -8,16 +8,6 @@
  *
  * Return: 0 when success
  */
-#include <stdio.h>
-#include <stdlib.h>
-
-/**
- * main -  prints the opcodes of its own main function
- * @argc: counter of arguments
- * @argv: array of arguments
- *
- * Return: 0 when success
- */
 
 int main(int argc, char *argv[])
 {
