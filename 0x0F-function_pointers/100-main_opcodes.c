@@ -21,8 +21,8 @@
 
 int main(int argc, char *argv[])
 {
-	int i;
-	char *list;
+	char *oc = (char *) main;
+	int x, nb;
 
 	if (argc != 2)
 	{
@@ -30,23 +30,21 @@ int main(int argc, char *argv[])
 		exit(1);
 	}
 
-	if (atoi(argv[1]) < 0)
+	nb = atoi(argv[1]);
+
+	if (nb < 0)
 	{
 		printf("Error\n");
-		exit(1);
+		exit(2);
 	}
 
-	list = (char *)main;
-
-	for (i = 0 ; i < atoi(argv[1]) ; i++)
+	for (x = 0; x < nb; x++)
 	{
-		if (i == atoi(argv[1]) - 1)
-		{
-			printf("%.2hhx\n", list[i]);
-			return (0);
-		}
-		printf("%02hhx", list[i]);
+		printf("%02x", oc[x] & 0xFF);
+		if (x != nb - 1)
+			printf(" ");
 	}
 
+	printf("\n");
 	return (0);
 }
