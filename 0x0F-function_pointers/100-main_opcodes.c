@@ -8,11 +8,21 @@
  *
  * Return: 0 when success
  */
+#include <stdio.h>
+#include <stdlib.h>
+
+/**
+ * main -  prints the opcodes of its own main function
+ * @argc: counter of arguments
+ * @argv: array of arguments
+ *
+ * Return: 0 when success
+ */
 
 int main(int argc, char *argv[])
 {
-	char *opc = (char *) main;
-	int i, nbytes;
+	int i;
+	char *list;
 
 	if (argc != 2)
 	{
@@ -20,21 +30,23 @@ int main(int argc, char *argv[])
 		exit(1);
 	}
 
-	nbytes = atoi(argv[1]);
-
-	if (nbytes < 0)
+	if (atoi(argv[1]) < 0)
 	{
 		printf("Error\n");
-		exit(2);
+		exit(1);
 	}
 
-	for (i = 0; i < nbytes; i++)
+	list = (char *)main;
+
+	for (i = 0 ; i < atoi(argv[1]) ; i++)
 	{
-		printf("%02x", opc[i] & 0xFF);
-		if (i != nbytes - 1)
-			printf(" ");
+		if (i == atoi(argv[1]) - 1)
+		{
+			printf("%.2hhx\n", list[i]);
+			return (0);
+		}
+		printf("%02hhx", list[i]);
 	}
 
-	printf("\n");
 	return (0);
 }
