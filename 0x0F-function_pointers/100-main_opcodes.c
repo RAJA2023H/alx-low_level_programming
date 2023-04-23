@@ -11,8 +11,8 @@
 
 int main(int argc, char *argv[])
 {
-	int count;
-	char *roll;
+	char *opc = (char *) main;
+	int i, nbytes;
 
 	if (argc != 2)
 	{
@@ -20,24 +20,21 @@ int main(int argc, char *argv[])
 		exit(1);
 	}
 
-	if (atoi(argv[1]) < 0)
+	nbytes = atoi(argv[1]);
+
+	if (nbytes < 0)
 	{
 		printf("Error\n");
-		exit(1);
+		exit(2);
 	}
 
-	roll = (char *)main;
-
-	for (count = 0 ; count < atoi(argv[1]) ; count++)
+	for (i = 0; i < nbytes; i++)
 	{
-		if (count == atoi(argv[1]) - 1)
-		{
-			printf("%.2hhx\n", roll[count]);
-			return (0);
-		}
-		printf("%02hhx", roll[count]);
+		printf("%02x", opc[i] & 0xFF);
+		if (i != nbytes - 1)
+			printf(" ");
 	}
 
+	printf("\n");
 	return (0);
 }
-
