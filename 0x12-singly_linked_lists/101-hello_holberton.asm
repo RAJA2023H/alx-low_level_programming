@@ -1,17 +1,19 @@
 section .data
-        msg db 'Hello, Holberton', 10
+    msg db "Hello, Holberton", 10  ; Define a string with a newline character at the end
 
 section .text
-        global main
+    global main     ; Declare the main function as the entry point for the program
+    extern printf   ; Declare the printf function as external
 
 main:
-    ; Write the message to stdout
-    mov eax, 4      ; Syscall number for write
-    mov ebx, 1      ; File descriptor 1 (stdout)
-    mov ecx, msg    ; Address of message
-    mov edx, 17     ; Lenght of message
-    int 0x80        ; Invoke the kernel to perform the syscall
+    push rbp        ; Save the base pointer on the stack
+    mov rbp, rsp    ; Set the stack frame pointer to the current stack pointer
 
-    ; Return from main with status code 0
-    xor eax, eax	; Return status code 0
-    ret
+    lea rdi, [msg]  ; Load the address of the msg string into the rdi register as the first argument to printf
+    xor eax, eax    ; Set eax to 0 (this is equivalent to mov eax, 0)
+    call printf     ; Call printf with the arguments in rdi and eax
+
+    mov eax, 0      ; Set the return value to 0 (indicating success)
+    leave           ; Restore the base pointer and stack pointer
+    ret             ; Return from the function
+
