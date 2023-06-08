@@ -2,7 +2,9 @@
 #include <stdio.h>
 
 /**
- *
+ * _puts_recursion - function that prints a string
+ * @s : string
+ * Return : 1 or 0.
  */
 
 void _puts_recursion(char *s)
