@@ -7,7 +7,7 @@
  *
  * @argv : string
  *
- * Return : 0
+ * Return: 0
  *
  */
 
