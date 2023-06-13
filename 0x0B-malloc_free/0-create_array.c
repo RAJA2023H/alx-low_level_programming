@@ -13,7 +13,7 @@ char *create_array(unsigned int size, char c)
 	else
 	{
 		while (size--)
- 		{
+		{
 			p[size] = c;
 		}
 	return (p);
