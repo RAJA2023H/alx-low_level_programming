@@ -4,12 +4,9 @@
 
 /**
  * str_concat -  function that concatenates two strings.
- *
- * @s1 : first strings.
- * @s2 : second strings.
- * Description : concatenates two strings.return 0 on failure.
- * Return : return 0 on failure.
- *
+ * @s1: first strings.
+ * @s2: second strings.
+ * Return: pointer to concat string.
  */
 
 char *str_concat(char *s1, char *s2)
