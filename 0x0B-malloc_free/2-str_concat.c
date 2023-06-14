@@ -7,7 +7,7 @@
  *
  * @s1 : first strings.
  * @s2 : second strings.
- * Discription : concatenates two strings.return 0 on failure.
+ * Description : concatenates two strings.return 0 on failure.
  * Return : return 0 on failure.
  *
  */
