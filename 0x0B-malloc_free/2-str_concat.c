@@ -8,7 +8,7 @@
  * @s1 : first strings.
  * @s2 : second strings.
  *
- * Return : return NULL on failure
+ * Return : return 0 on failure.
  *
  */
 
