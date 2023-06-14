@@ -29,6 +29,7 @@ char *_strdup(char *str)
 	while (i < (size + 1))
 	{
 		p[i] = str[i];
+		i++;
 	}
 	return (p);
 }
