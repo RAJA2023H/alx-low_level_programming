@@ -2,7 +2,8 @@
 #define LISTS_H
 
 /**Structure definition for a linked list node.**/
-typedef struct list_node {
+typedef struct list_node
+{
 	char *str;
 	unsigned int len;
 	struct list_node *next;
