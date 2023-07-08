@@ -8,13 +8,17 @@
  */
 unsigned int binary_to_uint(const char *b)
 {
-	size_t len = strlen(b);
+	int len;
 	unsigned int power;
 	unsigned int result;
 	int i;
 
 	if (b == NULL)
 		return (0);
+
+	for (len = 0; b[len] != '\0'; len++)
+		;
+
 	result = 0;
 	power = 1;
 	for (i = len - 1; i >= 0; i--)
