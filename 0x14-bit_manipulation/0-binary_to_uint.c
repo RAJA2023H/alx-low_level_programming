@@ -9,12 +9,12 @@
 unsigned int binary_to_uint(const char *b)
 {
 	size_t len = strlen(b);
-	unsigned int result = 0;
 	unsigned int power = 1;
+	unsigned int result = 0;
 	int i;
 
 	if (b == NULL)
-	return (0);
+		return (0);
 
 	for (i = len - 1; i >= 0; i--)
 	{
@@ -28,9 +28,7 @@ unsigned int binary_to_uint(const char *b)
 		else
 		{
 			return (0);
-
 		}
-
 		power *= 2;
 	}
 
