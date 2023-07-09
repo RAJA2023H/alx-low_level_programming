@@ -15,10 +15,8 @@ unsigned int binary_to_uint(const char *b)
 
 	if (b == NULL)
 		return (0);
-
 	for (len = 0; b[len] != '\0'; len++)
 		;
-
 	result = 0;
 	power = 1;
 	for (i = len - 1; i >= 0; i--)
@@ -36,6 +34,5 @@ unsigned int binary_to_uint(const char *b)
 		}
 		power *= 2;
 	}
-
 	return (result);
 }
