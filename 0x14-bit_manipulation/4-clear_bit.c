@@ -12,12 +12,13 @@
 int clear_bit(unsigned long int *n, unsigned int index)
 {
 	int ibit;
+
 	if (index >= sizeof(unsigned long int) * 8)
 	{
 		return (-1);
 	}
 	ibit = (*n & (1 << index)) ? 1 : 0;
-	if( ibit == 1)
+	if (ibit == 1)
 	{
 		*n = *n ^ (1 << index);
 	}
