@@ -2,7 +2,7 @@
 
 /**
  * append_text_to_file - function that convert
- * @filename: file 
+ * @filename: file.
  * @text_content: NULL terminated string.
  * Return: Always 0.
  */
