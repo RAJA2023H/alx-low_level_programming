@@ -10,12 +10,11 @@ int create_file(const char *filename, char *text_content)
 {
 	int df;
 	int len = 0;
-	ssize_t bytes_write;
 
 	if (!filename)
 		return (-1);
 
-	df = open(filename, O_CREAT | O_WRONLY, 0600);
+	df = open(filename, O_RDWR | O_CREAT | O_TRUNC, 0600);
 	/*Open the file for writing (create/truncate)*/
 	if (df == -1)
 		return (-1);
@@ -23,12 +22,7 @@ int create_file(const char *filename, char *text_content)
 	if (text_content)
 	{
 		len = strlen(text_content);
-		bytes_write = write(df, text_content, len);
-		if (bytes_write == -1)
-		{
-			close(df);
-			return (-1);
-		}
+		write(df, text_content, len);
 	}
 	close(df);  /*Close the file*/
 	return (1);
