@@ -1,10 +1,10 @@
 #include "main.h"
 
 /**
- * check_elf - Checks if a file is an ELF file.
+ * main - displays the information contained in the ELF header.
  * @argc: argument count.
  * @argv: arguments value.
- * Description: If the file is not an ELF file - exit code 98.
+ * Return: If the file is not an ELF file - exit code 98.
  */
 int main(int argc, char *argv[])
 {
@@ -16,7 +16,7 @@ int main(int argc, char *argv[])
 	if (argc != 2)
 	{
 		dprintf(2, "Usage: %s file\n", argv[0]);
-		exit (98);
+		exit(98);
 	}
 	snprintf(command, sizeof(command), "readelf -h %s", argv[1]);
 	pipe = popen(command, "r");
@@ -39,7 +39,7 @@ int main(int argc, char *argv[])
 			exit(98);
 		}
 	}
-	if(pclose(pipe) == -1)
+	if (pclose(pipe) == -1)
 	{
 		perror("pclose failed");
 		exit(98);
