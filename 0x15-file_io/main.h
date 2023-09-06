@@ -1,7 +1,8 @@
 #ifndef _MAIN_
 #define _MAIN_
 
-
+#include <errno.h>
+#include <stdint.h>
 
 #include <string.h>
 #include <sys/types.h>
