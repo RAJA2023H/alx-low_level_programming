@@ -6,7 +6,7 @@
  */
 size_t print_dlistint(const dlistint_t *h)
 {
-	const dlistint_t* current = h;
+	const dlistint_t *current = h;
 	int i = 0;
 
 	while (current)
@@ -15,5 +15,5 @@ size_t print_dlistint(const dlistint_t *h)
 		current = current->next;
 		i++;
 	}
-	return(i);
+	return (i);
 }
