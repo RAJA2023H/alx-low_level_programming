@@ -23,11 +23,11 @@ hash_table_t *hash_table_create(unsigned long int size)
 	new_table->array = (hash_node_t **)malloc(sizeof(hash_node_t *) * size);
 	if (!new_table->array)
 	{
-		return(NULL);
+		return (NULL);
 	}
 	for (i = 0; i < size; i++)
 	{
 		new_table->array[i] = NULL;
 	}
-	return new_table;
+	return (new_table);
 }
