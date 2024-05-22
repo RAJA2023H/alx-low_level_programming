@@ -44,7 +44,7 @@ int binary_search_recursive(int *array, size_t size, int value)
 }
 
 /**
- * advanced_binary_search - Calls binary_search_recursive to return
+ * advanced_binary - Calls binary_search_recursive to return
  * the index of the value.
  *
  * @array: Input array
